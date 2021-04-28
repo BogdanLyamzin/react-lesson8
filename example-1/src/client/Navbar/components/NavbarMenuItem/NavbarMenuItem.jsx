@@ -1,12 +1,12 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+
 import "./NavbarMenuItem.css";
 
-const NavbarMenuItem = ({href, text, handleClick}) => {
+const NavbarMenuItem = ({to, text}) => {
     return (
         <li className="navbar-menu-item">
-            <a href = {href} className="navbar-menu-link"
-                onClick={handleClick}>{text}</a>
+            <NavLink exact to={to} className="navbar-menu-link" activeClassName="active">{text}</NavLink>
         </li>
     )
 }

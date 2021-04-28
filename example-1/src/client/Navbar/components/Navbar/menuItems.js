@@ -1,14 +1,22 @@
 export const menuItems = [
     {
-        href: "/home",
+        to: "/",
         text: "Home",
     },
     {
-        href: "/about",
+        to: "/about",
         text: "About"
     },
     {
-        href: "/contacts",
+        to: "/posts",
+        text: "Posts"
+    },
+    {
+        to: "/posts/search",
+        text: "Posts Search"
+    },
+    {
+        to: "/contacts",
         text: "Contacts"
     },
 ]

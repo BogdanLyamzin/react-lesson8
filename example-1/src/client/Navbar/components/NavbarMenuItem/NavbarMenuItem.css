@@ -4,3 +4,7 @@
     padding: 10px 15px;
     color: #fff;
 }
+
+.navbar-menu-link.active {
+    background-color: red;
+}
